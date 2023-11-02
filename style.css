@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #685ad7;
+    width: 100vw;
+    height: 100vh;
+}
+
+.cards {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(24, 32, 138, 0.4);
+    width: 510px;
+    height: 510px;
+    border-radius: 8px;
+    gap: calc((510px - 400px)/7);
+
+
+}
+
+.cards .card {
+
+
+
+    width: 100px;
+    height: 100px;
+   
+
+
+
+
+}
+
+
+
+.card .back img {
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
+    position: absolute;
+    display: none;
+}
+
+.card .front img {
+    width: 100px;
+    height: 100px;
+    border-radius: 7px;
+    position: absolute;
+
+}
+
+
+
+
+
+
+
+@keyframes dyryn {
+    0% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    80% {
+        transform: translateX(-8px);
+    }
+
+    100% {
+        transform: translateX(8px);
+    }
+}
+
+.dyryn {
+    animation: dyryn 300ms ease;
+}
+
+.card.flipped .back img {
+    display: block;
+
+
+}
+
+.card.flipped .front img {
+    display: none;
+
+
+}
+
+h1{
+    height: 700px;
+    position: absolute;
+    margin-top: 0px;
+    font-family: monospace;
+    font-size: 80px;
+}
